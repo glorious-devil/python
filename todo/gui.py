@@ -18,11 +18,18 @@ class Ui_Widget():
         # przyciski Push ###
         self.logujBtn = QPushButton("Za&loguj")
         self.koniecBtn = QPushButton("&Koniec")
+        self.dodajBtn = QPushButton("&Dodaj")
+        self.dodajBtn.setEnabled(False)
+        self.zapiszBtn = QPushButton("&Zapisz")
+        self.zapiszBtn.setEnabled(False)
 
         # układ przycisków Push ###
         uklad = QHBoxLayout()
         uklad.addWidget(self.logujBtn)
+        uklad.addWidget(self.dodajBtn)
+        uklad.addWidget(self.zapiszBtn)
         uklad.addWidget(self.koniecBtn)
+
 
         # główny układ okna ###
         ukladV = QVBoxLayout(self)

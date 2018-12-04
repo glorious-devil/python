@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Wstawianie obrazów na stronę WWW</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        img { border: 5px solid #F00; }
+        a.zielony { color: red; }
+        .lewy { float: left; margin-right: 20px; }
+        .prawy {
+            float: right;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-family: "Times New Roman", Times, serif;
+            font-style: normal;
+            font-size: 16pt;
+        }
+
+        .zielony {
+            color: green;
+            font-size: 20pt;
+            text-decoration: underline;
+        }
+        div p {
+            font-family: arial, verdana, sans-serif;
+            background-color: red;
+            padding: 5px 10px 20px 10px;
+        }
+        #akapit5 {
+            border-left: 5px dotted blue;
+            border-bottom: 5px dotted blue;
+            font-family: serif;
+        }
+
+        #link {color: yellow;}
+        #link1 {color: pink;}
+
+        #listy li { color: red; }
+        li.wew { color: yellow; }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Wstawianie obrazów</h1>
+    <p>
+        <img src="./imgs/obraz1.jpg" width="350">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur.</p>
+    <p>
+        <img src="./imgs/obraz2.jpg" class="prawy" width="450">
+        <img src="./imgs/obraz3.jpg" class="lewy" width="450">
+        Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ull</p>
+
+    <p>Akapit 1 tekst przykładowy <a href="http://www.w3schools.com">w3schools.com</a></p>
+    <p class="zielony">Akapit 2 tekst przykładowy</p>
+    <p>Akapit 3 tekst przykładowy</p>
+
+    <div>
+        <p id="akapit4">Akapit 4 tekst przykładowy <a href="http://how2html.pl">Kurs HTML 5</a></p>
+        <p id="akapit5">Akapit 5 tekst przykładowy</p>
+        <p class="zielony">Akapit 6 tekst przykładowy</p>
+    </div>
+
+    <div>
+        <p class="zielony">Akapit 7 tekst przykładowy
+            <ol>
+                <li><a id="link1" class="zielony" href="http://how2html.pl" style="color: orange;">Kurs HTML 5</a></li>
+                <li><a id="link2" href="http://how2html.pl">Kurs HTML 5</a></li>
+                <li><a id="link3" href="http://how2html.pl">Kurs HTML 5</a></li>
+                <li><a id="link4" href="http://how2html.pl">Kurs HTML 5</a></li>
+                <li><a id="link5" href="http://how2html.pl">Kurs HTML 5</a></li>
+                [todo: wyjaśnić sposób zmieniania właściwości grup elementów]
+            </ol>
+         </p>
+        <p>Akapit 8 tekst przykładowy</p>
+        <p>Akapit 9 tekst przykładowy</p>
+    </div>
+
+    <div id="listy">
+        <ul>
+            <li>
+                <ul>
+                    <li class="wew">elemen listy zagnieżdżonej</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -24,6 +24,18 @@ pal1_prost = pal1.get_rect()
 pal1_prost.x = 350
 pal1_prost.y = 0
 
+pal2 = pygame.Surface([PAL_SZER, PAL_WYS])
+pal2.fill((255, 0, 0))
+pal2_prost = pal1.get_rect()
+pal2_prost.x = 350
+pal2_prost.y = 350
+
+pal3 = pygame.Surface([PAL_SZER, PAL_WYS])
+pal3.fill((0, 255, 0))
+pal3_prost = pal1.get_rect()
+pal3_prost.x = 350
+pal3_prost.y = 175
+
 # pętla główna programu
 while True:
     # obsługa zdarzeń
@@ -36,5 +48,7 @@ while True:
     # kolor okna gry, składowe RGB podane w tupli
     plansza.fill((200, 255, 255))
     plansza.blit(pal1, pal1_prost)
+    plansza.blit(pal2, pal2_prost)
+    plansza.blit(pal3, pal3_prost)
     # rysowanie okna
     pygame.display.update()
